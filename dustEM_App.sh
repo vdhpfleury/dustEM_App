@@ -295,7 +295,7 @@ setup_environment() {
 
 check_app_file() {
     cd ~
-    repos_app=$(find -name dustEM_App.py)
+    repos_app=$(find . -type f -name dustEM_App.py)
     dir_app=$(dirname $repos_app)
     cd $dir_app
 
